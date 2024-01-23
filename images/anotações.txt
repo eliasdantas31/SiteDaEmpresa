@@ -1,0 +1,45 @@
+.options li::after{
+    content: '';
+    width: 0%;
+    height: 3px;
+    background-color: white;
+    display: block;
+    position: absolute;
+    transition: all 1s ease;
+}
+
+.options:hover > li::after{
+    content: '';
+    width: 100%;
+}
+
+<footer>
+        <ul class="social_links">
+            <li>
+                <a href="https://www.instagram.com/mentalidade_de_empreenndedor/" target="_blank">
+                    <img src="images/instagram.svg" alt="">
+                </a>
+            </li>
+            <li>
+                <a href="https://www.tiktok.com/@mentalidadedempreendedor" target="_blank">
+                    <img src="images/tiktok.svg" alt="">
+                </a>
+            </li>
+            <h1 class="logo">SkyLink'd</h1>
+        </ul>
+    </footer>
+
+    .options li::after{
+    content: '';
+    width: 0%;
+    height: 3px;
+    background-color: white;
+    display: block;
+    position: absolute;
+    transition: all 1s ease;
+}
+
+.options:hover > li::after{
+    content: '';
+    width: 100%;
+}

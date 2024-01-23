@@ -1,38 +1,73 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>SkyLink'd</title>
     <link rel="stylesheet" href="header_style.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
 </head>
-
 <body>
     <nav class="nav-bar">
-        <h1 class="logo">SkyLink'd</h1>
         <section class="options_container">
             <ul class="options">
-                <li><a href="">home</a></li>
-                <li><a href="">serviços</a></li>
-                <li><a href="">clientes</a></li>
-                <li><a href="">????</a></li>
-                <li><a href="">????</a></li>
+                <li class="nav-link serviços">
+                    <a href="#">Serviços
+                        <span class="material-symbols-outlined dropdown-icon">expand_more</span>
+                    </a>
+                    <ul class="drop-down">
+                        <li>serviço 1</li>
+                        <li>serviço 2</li>
+                        <li>serviço 3</li>
+                    </ul>
+                </li>
+                <li class="nav-link contato">
+                    <a href="#">Contato
+                        <span class="material-symbols-outlined dropdown-icon">expand_more</span>
+                    </a>
+                    <ul class="drop-down">
+                        <li>contato 1</li>
+                        <li>contato 2</li>
+                        <li>contato 3</li>
+                    </ul>
+                </li>
+                <li class="nav-link parceiros">
+                    <a href="#">Parceiros
+                        <span class="material-symbols-outlined dropdown-icon">expand_more</span>
+                    </a>
+                    <ul class="drop-down">
+                        <li>parceiro 1</li>
+                        <li>parceiro 2</li>
+                        <li>parceiro 3</li>
+                    </ul>
+                </li>
+                <li class="nav-link produtos">
+                    <a href="#">Produtos
+                        <span class="material-symbols-outlined dropdown-icon">expand_more</span>
+                    </a>
+                    <ul class="drop-down">
+                        <li>produto 1</li>
+                        <li>produto 2</li>
+                        <li>produto 3</li>
+                    </ul>
+                </li>
             </ul>
         </section>
-        <ul class="social_links">
-            <li>
-                <a href="https://www.instagram.com/mentalidade_de_empreenndedor/" target="_blank">
-                    <img src="images/instagram.svg" alt="">
-                </a>
-            </li>
-            <li>
-                <a href="https://www.tiktok.com/@mentalidadedempreendedor" target="_blank">
-                    <img src="images/tiktok.svg" alt="">
-                </a>
-            </li>
-        </ul>
+    <h1 class="logo">SkyLink'd</h1>
+        <section class="login-container">
+            <ul class="login">
+                <a href="#"><span class="material-symbols-outlined">account_circle</span></a>
+                <li>
+                    <a href="#">Login In</a>
+                </li>
+            </ul>
+        </section>
     </nav>
 </body>
 </html>

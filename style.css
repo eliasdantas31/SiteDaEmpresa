@@ -4,3 +4,19 @@
     box-sizing: border-box;
     width: 100%;
 }
+
+.social_links {
+    width: 8%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    list-style: none;
+}
+
+.social_links>li>a>img {
+    height: 30px;
+    width: max-content;
+}
+
+.social_links>li {
+    width: max-content;
+}

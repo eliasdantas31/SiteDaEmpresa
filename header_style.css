@@ -1,29 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     position: fixed;
 }
 
 .nav-bar {
     width: 100%;
-    background-color: rgb(150, 0, 255);
+    background-color: #019bb6;
     height: 80px;
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr;
     align-items: center;
     position: fixed;
     padding: 10px;
 }
 
-.logo {
-    width: max-content;
-    color: white;
-}
-
 .options {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    width: 80%;
+    grid-template-columns: 2fr 2fr 2fr 2fr;
     list-style: none;
-    width: 40%;
-    text-align: center;
 }
 
 .options li a {
@@ -33,6 +33,14 @@ body {
 
 .options li{
     position: relative;
+}
+
+.options_container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    transform: translateX(3%);
+    font-size: 22px;
 }
 
 .options li::after{
@@ -47,30 +55,163 @@ body {
 
 .options:hover > li::after{
     content: '';
-    width: 100%;
+    width: 65%;
 }
 
-.options_container {
-    width: 100%;
+.nav-link, .drop-down li{
+    list-style: none;
+    height: 100%;
+    padding: 0.5rem 1rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.drop-down{
     position: absolute;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: -1;
+    padding: 0.5rem 0;
+    margin: 0.5rem -0.5rem;
+    background-color: #5f9ea0;
+    color: white;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 0.5rem;
+    font-size: 18px;
+    display: none;
 }
 
-.social_links {
-    width: 8%;
+.serviços:hover .drop-down{
+    display: block;
+}
+
+.contato:hover .drop-down{
+    display: block;
+}
+
+.parceiros:hover .drop-down{
+    display: block;
+}
+
+.produtos:hover .drop-down{
+    display: block;
+}
+
+
+.serviços a{
+    display: flex;
+}
+
+.contato a{
+    display: flex;
+}
+
+.parceiros a{
+    display: flex;
+}
+
+.produtos a{
+    display: flex;
+}
+
+.serviços .dropdown-icon{
+    font-size: 30px;
+    position: relative;
+    transform: rotate(0deg);
+    transition: 0.3s ease-in-out all;
+}
+
+.contato .dropdown-icon{
+    font-size: 30px;
+    position: relative;
+    transform: rotate(0deg);
+    transition: 0.3s ease-in-out all;
+}
+
+.parceiros .dropdown-icon{
+    font-size: 30px;
+    position: relative;
+    transform: rotate(0deg);
+    transition: 0.3s ease-in-out all;
+}
+
+.produtos .dropdown-icon{
+    font-size: 30px;
+    position: relative;
+    transform: rotate(0deg);
+    transition: 0.3s ease-in-out all;
+}
+
+.serviços:hover .dropdown-icon{
+    transform: rotate(180deg);
+}
+
+.contato:hover .dropdown-icon{
+    transform: rotate(180deg);
+}
+
+.parceiros:hover .dropdown-icon{
+    transform: rotate(180deg);
+}
+
+.produtos:hover .dropdown-icon{
+    transform: rotate(180deg);
+}
+
+.drop-down li:hover{
+    background: white;
+    color: #5f9ea0;
+    border-radius: 0.5rem;
+}
+
+.logo{
+    width: max-content;
+    color: white;
+    transform: translateX(100%);
+    font-size: 40px;
+    font-weight: normal;
+    font-family: 'Black Ops One', system-ui;
+    cursor: default;
+}
+
+.login-container{
+    width: 100%;
+    display: flex;
+    align-items:center;
+    transform: translateX(40%);
+    font-size: 22px;
+}
+
+.login{
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    width: 47%;
+    grid-template-columns: 12% 35%;
     list-style: none;
 }
 
-.social_links>li>a>img {
-    height: 30px;
-    width: max-content;
+.material-symbols-outlined{
+    color: white;
+    transform: translateX(-3%);
+    cursor: pointer;
 }
 
-.social_links>li {
-    width: max-content;
+.login li a{
+    text-decoration: none;
+    color: white;
+}
+
+.login li{
+    position: relative;
+}
+
+.login li::after{
+    content: '';
+    width: 0%;
+    height: 3px;
+    background-color: white;
+    display: block;
+    position: absolute;
+    transition: all 1s ease;
+}
+
+.login:hover > li::after{
+    content: '';
+    width: 80%;
 }
