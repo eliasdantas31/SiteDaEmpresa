@@ -78,6 +78,10 @@ body {
     display: none;
 }
 
+.drop-down li a:hover{
+    color: #5f9ea0;
+}
+
 .serviços:hover .drop-down{
     display: block;
 }
@@ -164,7 +168,7 @@ body {
 .logo{
     width: max-content;
     color: white;
-    transform: translateX(100%);
+    transform: translateX(95%);
     font-size: 40px;
     font-weight: normal;
     font-family: 'Black Ops One', system-ui;
