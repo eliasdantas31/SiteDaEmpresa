@@ -1,0 +1,17 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.footer-container{
+    width: 100%;
+    background-color: #4682B4;
+}
+
+.bnt-singup{
+    background-color: black;
+    height: 30px;
+    width: 100px;
+    transform: translateX(1000%);
+}
