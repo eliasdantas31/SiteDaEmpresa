@@ -1,0 +1,264 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    position: fixed;
+}
+
+.nav-bar {
+    width: 100%;
+    background-color: #019bb6;
+    height: 80px;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    position: fixed;
+    padding: 10px;
+}
+
+.options li a {
+    text-decoration: none;
+    color: white;
+}
+
+.options li{
+    position: relative;
+}
+
+.options li::after{
+    content: '';
+    width: 0%;
+    height: 3px;
+    background-color: white;
+    display: block;
+    position: absolute;
+    transition: all 1s ease;
+}
+
+.options:hover > li::after{
+    content: '';
+    width: 65%;
+}
+
+.nav-link, .drop-down li{
+    list-style: none;
+    height: 100%;
+    padding: 0.5rem 1rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.drop-down{
+    position: absolute;
+    padding: 0.5rem 0;
+    margin: 0.5rem -0.5rem;
+    background-color: #5f9ea0;
+    color: white;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 0.5rem;
+    font-size: 18px;
+    display: none;
+}
+
+.drop-down li a:hover{
+    color: #5f9ea0;
+}
+
+.serviços:hover .drop-down{
+    display: block;
+}
+
+.contato:hover .drop-down{
+    display: block;
+}
+
+.parceiros:hover .drop-down{
+    display: block;
+}
+
+.produtos:hover .drop-down{
+    display: block;
+}
+
+
+.serviços a{
+    display: flex;
+}
+
+.contato a{
+    display: flex;
+}
+
+.parceiros a{
+    display: flex;
+}
+
+.produtos a{
+    display: flex;
+}
+
+.serviços .dropdown-icon{
+    font-size: 30px;
+    position: relative;
+    transform: rotate(0deg);
+    transition: 0.3s ease-in-out all;
+}
+
+.contato .dropdown-icon{
+    font-size: 30px;
+    position: relative;
+    transform: rotate(0deg);
+    transition: 0.3s ease-in-out all;
+}
+
+#menu-icon{
+    width: 50px;
+    height: 50px;
+    padding: 0 1px;
+    background-color: transparent;
+    margin: 0 10px; 
+    border: 0 transparent;
+    cursor: pointer;
+    
+}
+
+
+
+.ativar .linha{
+    background-color: red;
+}
+
+.ativar .linha:nth-child(1){
+    transform: rotate(-45deg);
+    position: absolute;
+}
+
+.ativar .linha:nth-child(2){
+    width: 0;
+}
+
+.ativar .linha:nth-child(3){
+    transform: rotate(45deg);
+    position: absolute;
+}
+
+.ativar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+}
+
+.linha{
+    width: 80%;
+    height: 4px;
+    background-color: #fff;
+    display: block;
+    margin: 7px auto;
+    position: relative;
+    transform-origin: center;
+    transition: all .3s ease;
+}
+
+.parceiros .dropdown-icon{
+    font-size: 30px;
+    position: relative;
+    transform: rotate(0deg);
+    transition: 0.3s ease-in-out all;
+}
+
+.produtos .dropdown-icon{
+    font-size: 30px;
+    position: relative;
+    transform: rotate(0deg);
+    transition: 0.3s ease-in-out all;
+}
+
+.serviços:hover .dropdown-icon{
+    transform: rotate(180deg);
+}
+
+.contato:hover .dropdown-icon{
+    transform: rotate(180deg);
+}
+
+.parceiros:hover .dropdown-icon{
+    transform: rotate(180deg);
+}
+
+.produtos:hover .dropdown-icon{
+    transform: rotate(180deg);
+}
+
+.menu-icon{
+    height: 60px;
+    width: max-content;
+}
+
+.drop-down li:hover{
+    background: white;
+    color: #5f9ea0;
+    border-radius: 0.5rem;
+}
+
+.logo{
+    width: 100%;
+    color: white;
+    font-size: 40px;
+    justify-content: center;
+    display: flex;
+    position: absolute;
+    font-weight: normal;
+    font-family: 'Black Ops One', system-ui;
+    right: 0;
+    z-index: -1;
+}
+
+.login-container{
+    display: flex;
+    align-items:center;
+    /* width: 20%; */
+    margin: 20px;
+    font-size: 22px;
+}
+
+.login{
+    display: grid;
+    width: 100%;
+    grid-template-columns: .2fr 1fr;
+    list-style: none;
+    color: white;
+    text-decoration: none;
+}
+
+.material-symbols-outlined{
+    color: white;
+    cursor: pointer;
+}
+
+.login span, .login p{
+    margin: 0 4px;
+}
+
+.login p{
+    position: relative;
+}
+
+.login p::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background-color: white;
+    display: block;
+    position: absolute;
+    transition: all .5s ease;
+}
+
+.login:hover > p::after{
+    content: '';
+    width: 100%;
+}

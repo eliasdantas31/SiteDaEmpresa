@@ -1,0 +1,24 @@
+@import url(../../../Style.css);
+
+.options_container {
+    display: block;
+    width: 100%;
+    position: absolute;
+    font-size: 22px;
+}
+
+.options_bar{
+    width: 100%;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+}
+.btn-menu-container{
+    height: var(--tamanho-header);
+    width: max-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

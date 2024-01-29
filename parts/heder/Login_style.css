@@ -1,0 +1,163 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Fjalla One', sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(72deg, #1E90FF	 20%, #4169E1 80%);
+}
+
+.fundo-login{
+    display: flex;
+    flex-direction: row-reverse;
+    width: 50vw;
+    height: 50vh;
+    border-radius: 25px;
+    background-color: transparent;
+    backdrop-filter: blur(50px);
+    border: 2px solid rgba(255, 255, 255, .2);
+    position: relative;
+}
+
+.textos-fundo{
+    position: absolute;
+    width: 90%;
+    transform: translateY(485%);
+    font-size: 30px;
+    color: #fff;
+}
+
+.textos-fundo-subtitulo{
+    padding-top: 15px;
+    font-size: 15px;
+}
+
+.Login{
+    width: 420px;
+    border: 2px solid rgba(255, 255, 255, .2);
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    color: #000;
+    border-radius: 25px;
+    padding: 30px 40px;
+    position: relative;
+}
+
+.Login h1{
+    font-size: 36px;
+    font-weight: normal;
+    text-align: center;
+
+}
+
+.Login h5{
+    padding-top: 10px;
+    text-align: center;
+    color: #545454;
+    font-weight: normal;
+}
+
+.Login .input-box{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin: 20px 0;
+}
+
+.input-box input{
+    width: 100%;
+    height: 100%;
+    background-color: #e9e9e9;
+    border: none;
+    outline: none;
+    border: 2px solid rgba(255, 255, 255, .2);
+    border-radius: 40px;
+    font-size: 13px;
+    color: #a9a9a9;
+    padding: 15px 45px 15px 30px;
+}
+
+.input-box input:placeholder{
+    color: #a9a9a9;
+}
+
+.input-box i{
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+}
+
+.Login .bnt{
+    width: 100%;
+    height: 45px;
+    background-color: #4169E1;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    color: #fff;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 500;
+    transition: 0.7s;
+}
+
+.Login .bnt:hover{
+    background-color: #a9a9a9; 
+    color: #fff;
+}
+
+.Login .registro{
+    font-size: 14,5;
+    text-align: center;
+    margin: 20px 0 15px;
+    cursor: default;
+}
+
+.Login .voltar{
+    font-size: 14,5;
+    text-align: center;
+    margin: 20px 0 15px;
+}
+
+.Login .input-google{
+    position: relative;
+    width: 100%;
+    height: 50px;
+}
+
+.bnt-google{
+    width: 100%;
+    height: 45px;
+    background-color: #4169E1;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    color: #fff;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 500;
+    transition: 0.7s;
+}
+
+.bnt-google:hover{
+    background-color: #a9a9a9;
+}
+
+.input-google i{
+    position: absolute;
+    right: 85%;
+    top: 50%;
+    transform: translateY(-60%);
+    font-size: 30px;
+    color: #fff;
+}

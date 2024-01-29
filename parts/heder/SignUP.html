@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkyLin'd Login Page</title>
+    <link rel="stylesheet" href="./SignUP_style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <section class="fundo-login">
+        <div class="textos-fundo">
+            <p>Seja Bem Vindo</p>
+            <p class="textos-fundo-subtitulo">Inscreva-se para ter acesso aos serviços da SkyLink'd</p>
+        </div>
+        <div class="Login">
+            <form name="form-login" method="POST" action="verificação.php">
+                <h1>Sign Up</h1>
+                <h5>Preencha os campos abaixo com dados validos.</h5>
+                <div class="input-box">
+                    <input name="Nome-usu" type="text" placeholder="Nome de Usuário" required>
+                    <i class='bx bxs-user'></i>
+                </div>
+                <div class="input-box">
+                    <input name="Email-usu" type="text" placeholder="Email de Usuário" required>
+                    <i class='bx bxs-envelope'></i>
+                </div>
+                <div class="input-box">
+                    <input name="Senha-usu" type="password" placeholder="Senha" required>
+                    <i class='bx bxs-lock-alt'></i>
+                </div>
+
+                <button type="submit" class="bnt">Continue</button>
+
+                <div class="registro">
+                    <p>Outros meios de inscrever-se</p>
+                </div>
+                <div class="input-google">
+                    <i class='bx bxl-google'></i>
+                    <button type="submit" class="bnt-google">Inscreva-se com o Google</button>
+                </div>
+            </form>
+        </div>
+    </section>
+</body>
+</html>
